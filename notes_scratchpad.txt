@@ -1,0 +1,264 @@
+Datasets (filename | variable | URL ) under consideration
+=========================================================
+
+x   major_roads
+    data/Louisville_Metro_Area_KY_Major_Roads.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-area-ky-major-roads/about
+
+x   jeffco_roads
+    major_roads clipped to Jefferson County only
+    https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-area-ky-major-roads/about
+
+x   hi_injury
+    data/Louisville_Metro_KY_-_High_Injury_Network.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-ky-high-injury-network-1/about
+
+x   bikeways
+    data/Jefferson_County_KY_Bikeways.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::jefferson-county-ky-bikeways/about
+
+x   bus_stops
+    data/Louisville_Metro_Area_KY__TARC_Bus_Stops.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-area-ky-tarc-bus-stops/about
+
+x   road_details
+    data/Louisville_Metro_KY_Road_Context_Classifications.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-ky-road-context-classifications/about
+
+x   zebras
+    data/Jefferson_County_KY_Midblock_Crossings.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::jefferson-county-ky-midblock-crossings/about
+
+x   signals
+    data/Jefferson_County_KY_Signalized_Intersections.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::jefferson-county-ky-signalized-intersections/about
+
+x   centerlines
+    data/Jefferson_County_KY_Street_Centerlines.geojson
+    https://data.louisvilleky.gov/datasets/LOJIC::jefferson-county-ky-street-centerlines/about
+
+
+columns of interest by table
+============================
+
+road_details :
+    OBJECTID
+    RWCOMPKEY
+    FROM_ADDRESS
+    ROADNAME
+    DIR
+    STRNAME
+    TYPE
+    LOCROSSPR
+    LOCROSSNA
+    LOCROSSSU
+    HICROSSPR
+    HICROSSNA
+    HICROSSSU
+    SPEED
+    MUNI_NAME
+    COUNDIST
+    OWNER_NAME
+    CORE_CLASS
+    ROUTE_LBL
+    CONTEXT_CLASS
+    SHAPELEN
+    geometry
+
+hi_injury:
+    OBJECTID
+    RWCOMPKEY
+    FROM_ADDRE
+    TO_ADDRESS
+    ROADNAME
+    DIR
+    STRNAME
+    TYPE
+    LOCROSSPR
+    LOCROSSNA
+    LOCROSSSU
+    HICROSSPR
+    HICROSSNA
+    HICROSSSU
+    MUNI_NAME
+    COUNDIST
+    OWNER_NAME
+    CORE_CLASS
+    ROUTE_LBL
+    LENGTH
+    PRIORITY_R
+    ROUTE_UNIQ
+    CORRIDOR_N
+    BEGIN_LOCA
+    BMP
+    END_LOCATI
+    EMP
+    TOTAL_EPDO
+    EPDO_MILE
+    TOTAL_KA_C
+    KA_MILE
+    JUSTICE40_
+    PERCENT_JU
+    OWNER
+    SHAPELEN
+    geometry
+
+zebras:
+    OBJECTID
+    ROADNAME
+    CID
+    CROSSTYPE
+    CROSSST
+    ATTRACT
+    ATTRACTADD
+    STATUS
+    MILEPOINT
+    AIDTYPE
+    HVCROSS
+    PEDREF
+    CURBEXT
+    DELPOST
+    TARC
+    GUARD
+    AADT
+    AADTSO
+    AADTYR
+    COUNDIST
+    COUNDIST1
+    RWCOMPKEY
+    DIR
+    STRNAME
+    TYPE
+    SPEED
+    ONE_WAY
+    MUNI_NAME
+    MAIN_DIST
+    OWNER_ABRV
+    MAIN_RESP
+    CLASS_ABRV
+    ROUTE_LBL
+    POINT_X
+    POINT_Y
+    geometry
+
+signals:
+    OBJECTID
+    UNITID
+    SIGID
+    MAINSTREET
+    CROSSSTREET
+    OWNER2
+    ROUTE
+    MILEPOINT
+    DESCRIPTION
+    TIMES
+    OWNER
+    TYPE
+    INTID
+    ATMSID
+    geometry
+
+jeffco_roads:
+    OBJECTID
+    ROAD_NAME
+    COUNTY_NAME
+    HWY_SYMBOL
+    HWY_NUM
+    SHAPELEN
+    geometry
+
+bikeways:
+    OBJECTID
+    ROADNAME
+    MAP_TYPE
+    MPWBIKEID
+    SHAPELEN
+    geometry
+
+bus_stops:
+    OBJECTID
+    STOPID
+    STOPABBR
+    STOPNAME
+    LON
+    LAT
+    geometry
+
+centerlines:
+    OBJECTID
+    RWCOMPKEY
+    RWCOMPKEYPARENT
+    LOW_ADDRESS
+    FROM_ADDRESS
+    TO_ADDRESS
+    LFROM
+    LTO
+    RFROM
+    RTO
+    SIFID
+    SIFCODE
+    ROADNAME
+    AVDIR
+    AVPRETYPE
+    AVSTNAME
+    AVSTTYPE
+    AVSUFDIR
+    DIR
+    STRNAME
+    TYPE
+    SIFIDLOW
+    LOCROSSSIF
+    LOCROSSPR
+    LOCROSSNA
+    LOCROSSSU
+    SIFIDHI
+    HICROSSSIF
+    HICROSSPR
+    HICROSSNA
+    HICROSSSU
+    ONE_WAY
+    FTIMP
+    TFIMP
+    SPEED
+    MUNI_NAME
+    COUNDIST
+    MAIN_DIST
+    MAPNO
+    OWNER_NAME
+    OWNER_ABRV
+    MAIN_RESP
+    MAIN_ABRV
+    CORE_CLASS
+    CLASS_ABRV
+    STCL_CLASS
+    ZIP_LEFT
+    ZIP_RIGHT
+    COMPKEY
+    COMPTYPE
+    UNITID
+    UNITID2
+    ENTERED_BY
+    ENTERED_ON
+    UPDATED_BY
+    UPDATED_ON
+    ROUTE_LBL
+    LENGTH
+    ALIAS1_DIR
+    ALIAS1_STRNAME
+    ALIAS1_TYPE
+    ALIAS1_SIFID
+    ALIAS2_DIR
+    ALIAS2_STRNAME
+    ALIAS2_TYPE
+    ALIAS2_SIFID
+    ALIAS3_DIR
+    ALIAS3_STRNAME
+    ALIAS3_TYPE
+    ALIAS3_SIFID
+    ALIAS4_DIR
+    ALIAS4_STRNAME
+    ALIAS4_TYPE
+    ALIAS4_SIFID
+    GLOBALID
+    SHAPELEN
+    geometry
