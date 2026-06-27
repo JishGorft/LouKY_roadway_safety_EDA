@@ -38,7 +38,7 @@ x   centerlines
     https://data.louisvilleky.gov/datasets/LOJIC::jefferson-county-ky-street-centerlines/about
 
 
-columns of interest by table
+columns by table
 ============================
 
 road_details :
