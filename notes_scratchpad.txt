@@ -42,8 +42,8 @@ columns by table
 ============================
 
 road_details :
-    OBJECTID
-    RWCOMPKEY
+    OBJECTID        
+    RWCOMPKEY       FK
     FROM_ADDRESS
     ROADNAME
     DIR
@@ -67,7 +67,7 @@ road_details :
 
 hi_injury:
     OBJECTID
-    RWCOMPKEY
+    RWCOMPKEY       FK
     FROM_ADDRE
     TO_ADDRESS
     ROADNAME
@@ -125,7 +125,7 @@ zebras:
     AADTYR
     COUNDIST
     COUNDIST1
-    RWCOMPKEY
+    RWCOMPKEY       FK
     DIR
     STRNAME
     TYPE
@@ -182,6 +182,15 @@ bus_stops:
     STOPNAME
     LON
     LAT
+    geometry
+
+bus_routes:
+    OBJECTID
+    ROUTE_NAME
+    ROUTE_TYPE
+    ROUTE_NUMBER
+    TARC_WEB
+    SHAPELEN
     geometry
 
 centerlines:
